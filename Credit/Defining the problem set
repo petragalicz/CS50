@@ -1,0 +1,10 @@
+The goal is to write a program that prompts the user for a credit card number and then reports (via print) whether it is a valid American Express, MasterCard, or Visa card number.
+To do this, we're using Luhn's algorithm. According to the algorithm, you can determine if a credit card number is (syntactically) valid as follows:
+  Multiply every other digit by 2, starting with the number’s second-to-last digit, and then add those products’ digits together.
+  Add the sum to the sum of the digits that weren’t multiplied by 2.
+  If the total’s last digit is 0 (or, put more formally, if the total modulo 10 is congruent to 0), the number is valid!
+To determine which type of credit card it is, we're taking advantage of the fact that:
+  American Express uses 15-digit numbers, MasterCard uses 16-digit numbers, and Visa uses 13- and 16-digit numbers
+  American Express numbers start with 34 or 37; most MasterCard numbers start with 51, 52, 53, 54, or 55 and all Visa numbers start with 4. 
+
+(source: https://cs50.harvard.edu/x/2021/psets/1/credit)
