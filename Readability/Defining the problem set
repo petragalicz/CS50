@@ -1,0 +1,8 @@
+The goal is to implement a program that computes the approximate grade level needed to comprehend some text, using the Coleman-Liau formula. 
+The Coleman-Liau index is computed as 0.0588 * L - 0.296 * S - 15.8, 
+where L is the average number of letters per 100 words in the text, and S is the average number of sentences per 100 words in the text.
+
+If the resulting index number is 16 or higher, the program should output "Grade 16+" instead of giving the exact index number. 
+If the index number is less than 1, the program should output "Before Grade 1".
+
+(source: https://cs50.harvard.edu/x/2021/psets/6/readability)
