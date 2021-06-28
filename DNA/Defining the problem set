@@ -1,0 +1,26 @@
+The goal is to implement a program that identifies a person based on their DNA.
+
+Background:
+
+DNA is a sequence of molecules called nucleotides, arranged into a particular shape (a double helix). Each nucleotide of DNA contains one of four different bases: 
+adenine (A), cytosine (C), guanine (G), or thymine (T). Every human cell has billions of these nucleotides arranged in sequence. 
+Some portions of this sequence (i.e. genome) are the same, or at least very similar, across almost all humans, 
+but other portions of the sequence have a higher genetic diversity and thus vary more across the population.
+
+One place where DNA tends to have high genetic diversity is in Short Tandem Repeats (STRs). 
+An STR is a short sequence of DNA bases that tends to repeat consecutively numerous times at specific locations inside of a person’s DNA. 
+The number of times any particular STR repeats varies a lot among individuals. 
+Using multiple STRs, rather than just one, can improve the accuracy of DNA profiling. CODIS, The FBI’s DNA database, uses 20 different STRs as part of its DNA profiling process.
+
+The CS50 staff has provided sequences of DNAs and two CSV file containing STR counts for a list of individuals.
+
+The .txt files of sequences of DNAs contains the STRs:
+AAGGTAAGTTTAGAATATAAAAGGTGAGTTAAATAGAATAGGTTAAAATTAAAGGAGATCAGATCAGATCAGATCTATCTATCTATCTATCTATCAGAAAAGAGTAAATAGTTAAAGAGTAAGATATTGAATTAATGGAAAATATTGTTGGGGAAAGGAGGGATAGAAGG
+
+The DNA database is in a CSV file, wherein each row corresponds to an individual, and each column corresponds to a particular STR:
+name,AGAT,AATG,TATC
+Alice,28,42,14
+Bob,17,22,19
+Charlie,36,18,25
+
+So the goal is to write a program that will take a sequence of DNA and a CSV file containing STR counts for a list of individuals and then output to whom the DNA (most likely) belongs.
