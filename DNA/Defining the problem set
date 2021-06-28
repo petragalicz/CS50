@@ -23,4 +23,6 @@ Alice,28,42,14
 Bob,17,22,19
 Charlie,36,18,25
 
-So the goal is to write a program that will take a sequence of DNA and a CSV file containing STR counts for a list of individuals and then output to whom the DNA (most likely) belongs.
+So the program should take a sequence of DNA and a CSV file containing STR counts for a list of individuals and then output to whom the DNA (most likely) belongs.
+
+(source: https://cs50.harvard.edu/x/2021/psets/6/dna/) 
